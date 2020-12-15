@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Happy Camps</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,700|Work+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <div class="site-mobile-menu">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
+      <!-- .site-mobile-menu -->
+
+      <div class="site-navbar-wrap js-site-navbar bg-white">
+        <div class="container">
+          <div class="site-navbar bg-light">
+            <div class="row align-items-center">
+              <div class="col-2">
+                <h2 class="mb-0 site-logo">
+                  <a href="indexen.html" class="font-weight-bold text-uppercase"
+                    ><img src="hcsq.jpg" width="120px" height="80px"
+                  /></a>
+                </h2>
+              </div>
+              <div class="col-10">
+                <nav class="site-navigation text-right" role="navigation">
+                  <div class="container">
+                    <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                      <a
+                        href="#"
+                        class="site-menu-toggle js-menu-toggle text-black"
+                        ><span class="icon-menu h3"></span
+                      ></a>
+                    </div>
+
+                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                      <li class="has-children">
+                        <a href="abouten.html">About us</a>
+                        <ul class="dropdown arrow-top">
+                          <li>
+                            <a href="testimonialsen.html">HCSq Members</a>
+                          </li>
+                          <li><a href="galleryen.html">Gallery</a></li>
+                          <li><a href="faqen.html">FAQ</a></li>
+                          <li>
+                            <a href="why-choose-usen.html">Why choose us?</a>
+                          </li>
+                          <li class="has-children"></li>
+                        </ul>
+                      </li>
+                     
+                      <li><a href="blogen.html">Blog</a></li>
+                      <li><a href="contacten.html">Contact</a></li>
+                      <li>
+                        <a href="indexen.html"
+                          ><img src="steaguk.jpg" width="40px" height="20px"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="index.html"
+                          ><img src="steagro.jpg" width="40px" height="20px"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="site-blocks-cover inner-page overlay"
+        style="background-image: url(oportunitati.jpg);"
+        data-aos="fade"
+        data-stellar-background-ratio="0.5"
+      >
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-5 text-center" data-aos="fade">
+            <h1 class="text-uppercase">Opportunities</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="slant-1"></div>
+
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        ul {
+          list-style-type: none;
+        }
+        body {
+          font-family: Verdana, sans-serif;
+        }
+
+        .month {
+          padding: 50px 25px;
+          width: 100%;
+          background: #19813f !important;
+          text-align: center;
+        }
+
+        .month ul {
+          margin: 0;
+          padding: 0;
+        }
+
+        .month ul li {
+          color: white;
+          font-size: 20px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+
+        .month .prev {
+          float: left;
+          padding-top: 10px;
+        }
+
+        .month .next {
+          float: right;
+          padding-top: 10px;
+        }
+
+        .weekdays {
+          margin: 0;
+          padding: 10px 0;
+          background-color: #ddd;
+        }
+
+        .weekdays li {
+          display: inline-block;
+          width: 13.6%;
+          color: #19813f !important;
+          text-align: center;
+        }
+
+        .days {
+          padding: 10px 0;
+          background: #eee;
+          margin: 0;
+        }
+
+        .days li {
+          list-style-type: none;
+          display: inline-block;
+          width: 13.6%;
+          text-align: center;
+          margin-bottom: 5px;
+          font-size: 15px;
+          color: #777;
+        }
+
+        .days li .active {
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          background: #19813f !important;
+          color: white !important;
+        }
+
+        /* Add media queries for smaller screens */
+        @media screen and (max-width: 720px) {
+          .weekdays li,
+          .days li {
+            width: 13.1%;
+          }
+        }
+
+        @media screen and (max-width: 420px) {
+          .weekdays li,
+          .days li {
+            width: 12.5%;
+          }
+          .days li .active {
+            padding: 10px;
+          }
+        }
+
+        @media screen and (max-width: 290px) {
+          .weekdays li,
+          .days li {
+            width: 12.2%;
+          }
+        }
+
+        .nimic {
+          color: #eee !important;
+        }
+      </style>
+
+      <div class="pb-3 site-section first-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md-12" data-aos="fade">
+              <h2 class="site-section-heading text-center text-uppercase">
+                Our schedule
+              </h2>
+            </div>
+          </div>
+          <div class="month">
+            <ul>
+              <li>June 2020<br /></li>
+            </ul>
+          </div>
+
+          <ul class="weekdays" id="5">
+            <li>L</li>
+            <li>M</li>
+            <li>M</li>
+            <li>J</li>
+            <li>V</li>
+            <li>S</li>
+            <li>D</li>
+          </ul>
+
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <a href="#5"
+              ><li><span class="active">9</span></li></a
+            >
+            <li>10</li>
+            <li>11</li>
+            <a href="#8"
+              ><li><span class="active">12</span></li></a
+            >
+            <li>13</li>
+            <li>14</li>
+            <a href="#15"
+              ><li><span class="active">15</span></li></a
+            >
+            <li>16</li>
+            <li>17</li>
+            <li id="8">18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <a href="#25"
+              ><li><span class="active">25</span></li></a
+            >
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+          <br /><br />
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="d-flex align-items-center">
+                <span
+                  ><span
+                    class="flaticon-medal"
+                    style="font-size: 200%; color: #19813f;"
+                  ></span
+                ></span>
+                9 June
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates, sunt, laborum. Rem praesentium, necessitatibus
+                obcaecati quas, aliquam quasi fugiat quod impedit dolorem itaque
+                quis ab sed quibusdam, voluptatibus autem repudiandae.
+              </p>
+            </div>
+            <div
+              class="col-md-6 col-lg-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              id="15"
+            >
+              <h3 class="d-flex align-items-center">
+                <span
+                  ><span
+                    class="flaticon-medal"
+                    style="font-size: 200%; color: #19813f;"
+                  ></span
+                ></span>
+                12 June
+              </h3>
+              <p id="25">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates, sunt, laborum. Rem praesentium, necessitatibus
+                obcaecati quas, aliquam quasi fugiat quod impedit dolorem itaque
+                quis ab sed quibusdam, voluptatibus autem repudiandae.
+              </p>
+            </div>
+            <div
+              class="col-md-6 col-lg-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3 class="d-flex align-items-center">
+                <span
+                  ><span
+                    class="flaticon-medal"
+                    style="font-size: 200%; color: #19813f;"
+                  ></span
+                ></span>
+                15 June
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates, sunt, laborum. Rem praesentium, necessitatibus
+                obcaecati quas, aliquam quasi fugiat quod impedit dolorem itaque
+                quis ab sed quibusdam, voluptatibus autem repudiandae.
+              </p>
+            </div>
+            <div
+              class="col-md-6 col-lg-6 mb-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="d-flex align-items-center">
+                <span
+                  ><span
+                    class="flaticon-medal"
+                    style="font-size: 200%; color: #19813f;"
+                  ></span
+                ></span>
+                25 June
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptates, sunt, laborum. Rem praesentium, necessitatibus
+                obcaecati quas, aliquam quasi fugiat quod impedit dolorem itaque
+                quis ab sed quibusdam, voluptatibus autem repudiandae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br />
+      <div class="py-5 bg-primary">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-6 text-center mb-3 mb-md-0">
+              <h2 class="text-uppercase text-white mb-4" data-aos="fade-up">
+                Try for your next project
+              </h2>
+              <a
+                href="contacten.html"
+                class="btn btn-bg-primary font-secondary text-uppercase"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="site-footer bg-dark">
+        <div class="container">
+          <script>
+            function aratatext() {
+              document.getElementById("paragraf").style.display = "none";
+              document.getElementById("paragrafascuns").style.display = "block";
+              document.getElementById("buton").style.display = "none";
+            }
+          </script>
+
+          <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <img src="hcsqgri.jpg" width="200px" height="100px" />
+              <h3 class="footer-heading mb-4 text-white">About us</h3>
+              <p id="paragraf" style="text-align: justify;">
+                A family more than a team, a blessing more than a happenstance.
+                <br />We are Happy Camps Squad, an organization that has become
+                a second home for our over 200 members from Brasov, Bucharest,
+                Sibiu, Cluj and Braila.
+              </p>
+              <p
+                id="paragrafascuns"
+                style="display: none; text-align: justify;"
+              >
+                A family more than a team, a blessing more than a happenstance.
+                <br />We are Happy Camps Squad, an organization that has become
+                a second home for our over 200 members from Brasov, Bucharest,
+                Sibiu, Cluj and Braila. <br />We are those who give teenagers
+                from everywhere value for their leisure time through non formal
+                education, volunteering and, of course, lots of entertainment.
+                <br />We are those who break the monotony of life and give it
+                colours!
+              </p>
+              <p id="buton">
+                <button
+                  onclick="aratatext()"
+                  class="btn btn-primary text-white px-4"
+                >
+                  Learn more
+                </button>
+              </p>
+            </div>
+            <div class="col-md-5 mb-4 mb-md-0 ml-auto">
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <h3 class="footer-heading mb-4 text-white">Parteners</h3>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="https://www.happycamps.ro">Happy Camps Tabere</a>
+                    </li>
+                    <li>
+                      <a href="http://www.corporate-games.ro/ro"
+                        >Corporate Games</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.unitbv.ro"
+                        >Universitatea Transilvania Brașov</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.scoalafinlandeza.ro"
+                        >Liceul Româno-Finlandez</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.saguna.ro/beta/"
+                        >Colegiul Național Andrei Șaguna</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="https://cnunirea.ro"
+                        >Colegiul Național Unirea Brașov</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://demometal.ro/dwk/"
+                        >Clubul Economic German</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://afafci.ro"
+                        >Asociația Femeilor de Afaceri Brașov</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://www.ccibv.ro"
+                        >Camera de Comerț și Industrie Brașov</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://smallgiants.org">Small Giants USA</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="footer-heading mb-4 text-white">Social Media</h3>
+                </div>
+                <div class="col-md-12">
+                  <p>
+                    <a
+                      href="https://www.facebook.com/pages/category/Non-Governmental-Organization--NGO-/Happy-Camps-Squad-Clubul-Voluntarilor-HappyCamps-1975931912692377/"
+                      target="_blank"
+                      class="pb-2 pr-2 pl-0"
+                      ><span
+                        class="icon-facebook"
+                        style="font-size: 150%;"
+                      ></span
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/happycampsclub/"
+                      target="_blank"
+                      class="p-2"
+                      ><span
+                        class="icon-instagram"
+                        style="font-size: 150%;"
+                      ></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <p>
+                <!-- Link back to HCSq can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved |
+                <a href="#" target="_blank">Happy Camps Squad</a>
+                <!-- Link back to HCSq can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+              <p>
+                <b style="color: crimson; font-weight: 500;">Powered By</b>
+                <a
+                  href="https://radu-nicolae.com/"
+                  target="_blank"
+                  style="color: white; text-decoration: underline;"
+                  >Radu Nicolae</a
+                >
+                &
+                <a
+                  style="color: white; text-decoration: underline;"
+                  href="https://luanaionica.com"
+                  target="_blank"
+                >
+                  Luana Ionică
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
